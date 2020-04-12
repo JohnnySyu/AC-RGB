@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="./style.css">
+
+  <title>RGB</title>
+</head>
+
+<body>
+  <div id="background-color">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <h1 class>RGB</h1>
+          <form>
+
+            <div class="input-group mb-3" style="width: 50%;">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">R</span>
+              </div>
+              <input type="text" class="form-control" id="r-value" placeholder="輸入0~255" aria-label="Username"
+                aria-describedby="basic-addon1">
+              <div id="r-color"
+                style="width:39px;height:39px; border-width:3px; border-style:solid;border-color:rgb(10, 10, 10) ">
+              </div>
+            </div>
+
+
+            <div class="input-group mb-3" style="width: 50%;">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">G</span>
+              </div>
+              <input type="text" class="form-control " id="g-value" placeholder="輸入0~255" aria-label="Username"
+                aria-describedby="basic-addon1">
+              <div id="g-color"
+                style="width:39px;height:39px; border-width:3px; border-style:solid;border-color:rgb(10, 10, 10);">
+              </div>
+            </div>
+
+
+            <div class="input-group mb-3" style="width: 50%;">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">B</span>
+              </div>
+              <input type="text" class="form-control b-value" id="b-value" placeholder="輸入0~255" aria-label="Username"
+                aria-describedby="basic-addon1">
+              <div id="b-color"
+                style="width:39px;height:39px; border-width:3px; border-style:solid;border-color:rgb(10, 10, 10)">
+              </div>
+            </div>
+
+          </form>
+
+          <div class="btn btn-primary" id="convertBtn">Submit</div>
+        </div>
+        <div class="col-6">
+          <h1 class>HEX</h1>
+          <input type="text" class="form-control " value="" id="HEX-result">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./RGB.js"></script>
+
+</body>
+
+</html>
